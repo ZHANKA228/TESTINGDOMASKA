@@ -1,0 +1,15 @@
+<suite name="My test suite" verbose="1">
+    <listeners>
+        <listener class-name="org.testng.reporters.TestHTMLReporter" />
+<!--        <listener class-name="org.testng.reporters.JUnitXMLReporter" />-->
+    </listeners>
+    <test name="tests_results" preserve-order="true">
+        <parameter name="value" value="1" />
+        <parameter name="isEven" value="false" />
+        <classes>
+<!--            <class name="com.example.untitled.SeleniumTests" />-->
+            <class name="tests.SeleniumTests" />
+            <class name="tests.SimpleTests" />
+        </classes>
+    </test>
+</suite>
